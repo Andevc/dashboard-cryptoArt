@@ -1,51 +1,144 @@
 ---
+import NavBar from "@components/NavBar.astro";
+import SideBar from "@components/SideBar.astro";
+import BloobAnimate from "@components/BloobAnimate.astro";
 interface Props {
-	title: string;
+    tittle: string;
 }
-
-const { title } = Astro.props;
+const { tittle } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{tittle}</title>
+    </head>
+    <body>
+        
+        <section class="blob-animate">
+            <main class="main-content">
+                <aside class="aside-main-master">
+                    <SideBar userName="And3v" />
+                </aside>
+                <main class="main-main-master">
+                    <header class="header-main-master">
+                        <NavBar />
+                    </header>
+                    <section class="main-master">
+                        <slot />
+                    </section>
+                </main>
+            </main>
+            <section class="blobs">
+                <BloobAnimate color1="#ff004c" color2="#21d4fd" gradient="1" />
+            </section>
+            <section class="blobs">
+                <BloobAnimate color1="red" color2="#ff009c" gradient="2" />
+            </section>
+            <section class="blobs">
+                <BloobAnimate color1="#fad126" color2="#ff564e" gradient="3"/>
+            </section>
+            <section class="blobs">
+                <BloobAnimate color1="#18c729" color2="#f3f500" gradient="4" />
+            </section>
+            <section class="blobs">
+                <BloobAnimate color1="#aaffe2" color2="#00d191" gradient="5" />
+            </section>
+        </section>
+    </body>
 </html>
+
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+    @font-face {
+        font-family: "Akira";
+        src: url("/fonts/AkiraExpandedDemo.woff2") format("woff2");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "OliviarSansLg";
+        src: url("/fonts/OliviarSans-Light.woff2") format("woff2");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "OliviarSansRg";
+        src: url("/fonts/OliviarSans-Regular.woff2") format("woff2");
+        font-style: normal;
+    }
+    :root {
+        --bg-gradient: linear-gradient(45deg, #ff004c 0%, #21d4fd 100%);
+        --color-primary: #ff004c;
+        --color-secondary: #21d4fd;
+    }
+    body{
+        background:url("../assets/images/Background/bg.webp");
+        padding: 1em;
+        position: relative;
+    }
+    .main-content {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        column-gap: 1em;
+        z-index: 100;
+        position: relative;
+    }
+
+    .aside-main-master {
+        height: 95%;
+        width: 200px;
+        position: fixed;
+        top: 1em;
+        bottom: 0;
+        blob-sizing: border-blob;
+    }
+    .main-main-master {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: 60px 1fr;
+        gap: 1em;
+        
+    }
+    .header-main-master {
+        grid-row: 1/2;
+        position: sticky;
+        top: 1em;
+        z-index: 1000;
+    }
+    .main-main-master section.main-master {
+        grid-row: 2/3;
+        height: 100vh;
+        backdrop-filter: blur(1em);
+    }
+    .blob-animate{
+        top: 0;
+        bottom:0;
+        width: 100%;
+    }
+    .blobs{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        transition: left 5s ease-in-out, top 5s ease-in-out ;
+    }
 </style>
+
+<script is:inline>
+        const containerBlob = document.querySelector('.blob-animate');
+        const blobs = containerBlob.querySelectorAll('.blobs')
+        function moveBlob() {
+            blobs.forEach(blob =>{
+                const offsetX = Math.random() * (containerBlob.clientWidth - blob.clientWidth);
+                const offsetY = Math.random() * (containerBlob.clientHeight - blob.clientHeight);
+                blob.style.left = offsetX + 'px';
+                blob.style.top = offsetY + 'px';
+            }) 
+        }
+        moveBlob();
+        setInterval(moveBlob,5000);
+
+</script>
+

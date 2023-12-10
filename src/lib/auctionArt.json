@@ -1,0 +1,80 @@
+[
+    {
+        "img": "/video/vid1.mp4",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Live Future",
+        "autor": "Elena Rodriguez",
+        "avatar": "/images/avatars/avatar_profile_01.png",
+        "userNane": "EtherQueen",
+        "priceNFT": "5.14",
+        "priceUSD": "1079,69",
+        "auction": "22",
+        "date": "Enero 01, 2024",
+        "video": true 
+    },
+    {
+        "img": "/images/trend/trending05.png",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Future Life",
+        "autor": "Marco Garcia",
+        "avatar": "/images/avatars/avatar_profile_02.png",
+        "userNane": "MarcoExplo",
+        "priceNFT": "2.22",
+        "priceUSD": "7734,33",
+        "auction": "22",
+        "date": "Enero 01, 2024",
+        "video": false
+    },
+    {
+        "img": "/video/vid2.mp4",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Red Caos",
+        "autor": "Sofia Martinez",
+        "avatar": "/images/avatars/avatar_profile_05.png",
+        "userNane": "SofiArt",
+        "priceNFT": "3.54",
+        "priceUSD": "8935,37",
+        "auction": "22",
+        "date": "Enero 01, 2024",
+        "video": true
+    },
+    {
+        "img": "/images/trend/trending10.png",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Cyber Woman ",
+        "autor": "Carlos Lopez",
+        "avatar": "/images/avatars/avatar_profile_04.png",
+        "userNane": "Satoshi",
+        "priceNFT": "3.14",
+        "priceUSD": "2003,21",
+        "auction": "22",
+        "date": "Enero 01, 2024",
+        "video": false
+    },
+    {
+        "img": "/video/vid5.mp4",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Pink Ocean",
+        "autor": "Sofia Martinez",
+        "avatar": "/images/avatars/avatar_profile_05.png",
+        "userNane": "SofiArt",
+        "priceNFT": "4.54",
+        "priceUSD": "8935,37",
+        "auction": "22",
+        "date": "Enero 01, 2024",
+        "video": true
+    },
+    {
+        "img": "/images/trend/trending02.png",
+        "imgTittle": "auction crypto art ",
+        "tittle": "Old Samurai",
+        "autor": "Mauricio Perez",
+        "avatar": "/images/avatars/avatar_profile_03.png",
+        "userNane": "MauMaster",
+        "priceNFT": "5.14",
+        "priceUSD": "2003,21",
+        "auction": "22",
+        "date": "Enero 01, 2024",
+        "video": false
+    }
+]

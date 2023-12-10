@@ -1,0 +1,182 @@
+:root{
+    --color-primary:#ff004c ;
+	--color-secondary:#3b82f6;
+    --box-shadow:0 0 20px black ;
+}
+
+/* Swiper Custom Slyle */
+.swiper-button-prev {
+    filter: drop-shadow(0 5px black);
+    --swiper-navigation-color: var(--color-primary);
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+    transform: translateY(2px);
+}
+
+.swiper-button-next {
+    filter: drop-shadow(0 5px black);
+    --swiper-navigation-color: var(--color-secondary);
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+/* Slider Card */
+
+.slider-section {
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    padding: 2em 0;
+}
+
+.slider-card {
+    box-shadow: 0 0 20px black;
+    margin: 0 auto;
+    background: #090909cd;
+    height: 500px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+    padding: 2em 2.5em;
+    color: white;
+    border-radius: 2em;
+}
+/* Image  */
+.slider-card-img {
+    overflow: hidden;
+    border-radius: 2em;
+    box-shadow: var(--box-shadow);
+}
+
+.slider-card-img img ,.slider-card-img video {
+    border-radius: 2em;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Card Information */
+.slider-card-content {
+    
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+    padding: 2em 3em;
+    background-color: #060606;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 1.5em;
+    overflow: hidden;
+}
+
+
+.slider-card-content-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .5em 0;
+}
+
+.content-info-price {
+    padding-right: 3em;
+    border-right: 2px solid white;
+}
+
+.content-info-auction {
+    padding-left: 2em;
+    
+}
+
+.slider-card-content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* Avatar Profile */
+.slider-card-content-header-user {
+    margin-top: 1em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.header-user-profile {
+    width: 60px;
+    height: 60px;
+    padding: .1em;
+    margin-right: 2em;
+    position: relative;
+}
+
+.header-user-profile img {
+    border: 4px solid var(--color-primary);
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--color-secondary);
+
+}
+.header-user-profile svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* Card Buttons */
+.slider-card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.slider-card-buttons  a {
+    width: 200px;
+    padding: .5em 2em ;
+    margin-right: 2em;
+    border-radius: 2em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.card-bnt-primary a{
+    background-color: var(--color-primary);
+}
+.card-bnt-primary a:hover{
+    box-shadow: 0 0 30px var(--color-primary);
+}
+.card-bnt-secondary a{
+    background-color: #313131;
+}
+.card-bnt-secondary a:hover{
+    box-shadow: 0 0 20px #313131;
+}
+a:active{
+    transform: translateY(2px);
+}
+
+/* Text Card Style */
+
+.p-text-primary{
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.p-text-secondary{
+    color: gray;
+    letter-spacing: 1px;
+}
+
