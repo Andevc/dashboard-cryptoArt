@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import { Navigation, Autoplay } from 'swiper/modules';
+import {  Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
+
 import '@styles/AuctionSlider.css'
 import auctionInfo from '@lib/auctionArt.json'
 import CountDown from '@components/countDown.jsx'
@@ -12,19 +12,21 @@ export default function AuctionCards({path}){
             centeredSlides={true}
             slidesPerView={'1'}
             grabCursor={false}
-            loop={true}
+            /* loop={true} */
             navigation={true}
             
-            autoplay={{
-                delay:10000,
+            /* autoplay={{
+                delay:100000,
                 disableOnInteraction:false
-            }}
-            modules={[Navigation, Autoplay]}
+            }} */
+            modules={[Navigation]}
+            className={[' flex items-center justify-cener']}
         >
         {
             auctionInfo.map((item, index) => (
-                <SwiperSlide key={index}>
-                    <section class="slider-section">
+                <SwiperSlide key={index} >
+                    <section class="h-full flex items-center w-full border border-orange-400">
+                        
                         <section class="slider-card">
                             <section class="slider-card-img">
                                 { 
