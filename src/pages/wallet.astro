@@ -1,15 +1,28 @@
 ---
 import DashboardLayout from "@layouts/Layout.astro";
-
+import Error404 from  '@components/404.astro'
 ---
 
-<DashboardLayout tittle="home">
+<DashboardLayout tittle="Wallet">
 	<main>
-		<section class="border border-cyan-500 rounded-2xl "></section>
-		<section class="border border-cyan-500 rounded-2xl "></section>
-		<section class="border border-cyan-500 rounded-2xl "></section>
-		<section class="border border-cyan-500 rounded-2xl "></section>
-		<section class="border border-cyan-500 rounded-2xl "></section>
+		<section class="border border-green-500 rounded-2xl shadow-lg shadow-black bg-[#090909]">
+			<Error404 />
+		</section>
+		<section class="border border-green-500 rounded-2xl shadow-lg shadow-black bg-[#090909]">
+			<Error404 />
+		</section>
+		<section class="border border-green-500 rounded-2xl shadow-lg shadow-black bg-[#090909]">
+			<Error404 />
+		</section>
+		<section class="border border-green-500 rounded-2xl shadow-lg shadow-black bg-[#090909]">
+			<Error404 />
+		</section>
+		<section class="border border-green-500 rounded-2xl shadow-lg shadow-black bg-[#090909]">
+			<Error404 />
+		</section>
+		<section class="border border-green-500 rounded-2xl shadow-lg shadow-black bg-[#090909]">
+			<Error404 />
+		</section>
 	</main>
 </DashboardLayout>
 
@@ -21,6 +34,6 @@ import DashboardLayout from "@layouts/Layout.astro";
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		gap: 2em;
-		
 	}
+	
 </style>

@@ -1,34 +1,34 @@
 [
     {
-        "User": "Marco Garcia",
+        "user": "Marco Garcia",
         "avatar": "/images/avatars/avatar_profile_02.png",
         "userName": "MarcoExplo",
         "totalEarn": "1234"
 
     },
     {
-        "User": "Sofia Martinez",
+        "user": "Sofia Martinez",
         "avatar": "/images/avatars/avatar_profile_05.png",
         "userName": "SofiArt",
         "totalEarn": "1234"
 
     },
     {
-        "User": "Carlos Lopez",
+        "user": "Carlos Lopez",
         "avatar": "/images/avatars/avatar_profile_04.png",
         "userName": "Satoshi",
         "totalEarn": "1234"
 
     },
     {
-        "User": "Elena Rodriguez",
+        "user": "Elena Rodriguez",
         "avatar": "/images/avatars/avatar_profile_01.png",
         "userName": "EtherQueen",
         "totalEarn": "1234"
 
     },
     {
-        "User": "Mauricio Perez",
+        "user": "Mauricio Perez",
         "avatar": "/images/avatars/avatar_profile_03.png",
         "userName": "MauMaster",
         "totalEarn": "1234"

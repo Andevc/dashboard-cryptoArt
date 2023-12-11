@@ -18,7 +18,6 @@ export default function TopArt() {
             centeredSlides={true}
             slidesPerView={'3.8'}
             coverflowEffect={{
-                
                 rotate: 10,
                 stretch: 0,
                 depth: 75,
